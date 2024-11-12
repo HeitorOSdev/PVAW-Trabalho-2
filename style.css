@@ -1,0 +1,127 @@
+p {
+    text-align: justify;
+}
+
+figure{
+    background-color:rgb(213, 213, 213);
+    justify-content:center;
+    text-align:center;
+}
+
+hr{
+  
+    border-width: 3px;
+    border-color: greenyellow;
+    background-color: greenyellow;
+    margin-top: 0px;
+}
+
+h1{
+    margin-bottom: 0px;
+}
+
+img {
+    height: 9cm;
+    width: auto;
+}
+
+p, figcaption{
+    font-size: 12px;
+    color: rgb(49, 49, 49);
+}
+
+body {
+    font-family:Arial;
+}
+
+.class {
+    border: 3px double rgb(40, 94, 40);
+    background-color: rgb(40, 94, 40);
+    color: white;
+    font-size: 20px;
+    padding: 2px;
+
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.footer {
+    background-color: rgb(40, 94, 40);
+    border-top: 4px inset greenyellow;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: aliceblue;
+}
+
+.footer .left, .footer .center, .footer .right {
+    flex: 1;
+    padding: 5px;
+}
+
+.main {
+    margin-left: 7.6cm;
+    margin-right: 7.6cm;
+}
+
+
+.logo {
+    width: 350px;
+    height: auto;
+}
+
+
+/* Código para mobile-first*/
+
+
+
+/* Estilos base - Mobile first */
+body {
+    font-size: 16px; /* Tamanho de fonte padrão para dispositivos móveis */
+    padding: 10px;
+}
+
+main {
+    padding: 10px;
+}
+
+img.logo {
+    width: 100px; /* Tamanho da logo em dispositivos móveis */
+    height: auto;
+}
+
+/* Estilos para o footer em coluna (para telas pequenas) */
+.footer {
+    display: block;
+    text-align: center;
+}
+
+.footer .left, .footer .center, .footer .right {
+    margin-bottom: 10px; /* Espaço entre os itens */
+}
+
+/* Media Query para telas maiores (tablets e desktops) */
+@media (min-width: 768px) {
+    body {
+        font-size: 18px; /* Aumenta o tamanho da fonte */
+    }
+
+    img.logo {
+        width: 150px; /* Aumenta o tamanho da logo em telas maiores */
+    }
+
+    /* Estilos para organizar o footer em linha */
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .footer .left, .footer .center, .footer .right {
+        margin-bottom: 0;
+        flex: 1;
+    }
+}
