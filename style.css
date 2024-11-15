@@ -33,6 +33,12 @@ p, figcaption, ul{
 
 body {
     font-family:Arial;
+    font-size: 16px;
+    padding: 10px;
+}
+
+main {
+    padding: 10px;
 }
 
 .class { /*essa class é para o primeiro h1*/
@@ -57,42 +63,23 @@ body {
     padding: 10px;
     color: aliceblue;
     font-size: 0.6rem;
-}
 
-.footer .left, .footer .center, .footer .right {
-    flex: 1;
-    padding: 5px;
-}
-
-.logo {
-    width: 350px;
-    height: auto;
-}
-
-body {
-    font-size: 16px;
-    padding: 10px;
-}
-
-main {
-    padding: 10px;
-}
-
-img.logo {
-    width: 140px;
-    height: auto;
-}
-
-.footer {
+    /*Parte que deixa organizado em coluna*/
     display: block;
     text-align: center;
 }
 
-.footer .footerElement {
-    margin-bottom: 10px; /*espaçamento entre os itens, que estão um acima do outro*/
+.logo {
+    width: 140px;
+    height: auto;
 }
 
-@media (min-width: 768px) {
+.footer * {
+    padding: 1px;
+    margin-bottom: 10px; /*espaçamento entre os itens, que estão um acima do outro. Aumentando-se a altura da base da margem de cada elemento*/
+}
+
+@media only screen and (min-width: 769px) { /*quando for maior que 768, ele mudará para tela grande*/
     body {
         font-size: 18px; 
     }
@@ -102,7 +89,7 @@ img.logo {
         padding-right: 7.6cm;
     }
 
-    img.logo {
+    .logo {
         width: 200px;
         height: auto;
     }
@@ -114,14 +101,10 @@ img.logo {
 
     .footer {
         display: flex;
-        justify-content: space-between;
-        padding: 10px;
-        text-align: center;
         font-size: 0.7rem;
     }
 
-    .footer .footerElement {
-        margin-bottom: 0;
+    .footer * {
         flex: 1;
     }
 }
